@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href={{url_for('static', filename='style.css')}}>
-        {% block head %}{% endblock %}
-    </head>
-    <body class="darkmode">
-        <script src={{url_for('static', filename='script.js')}}></script>
-        <div class="topnav">
-            <a href="/insta">INSTAGRAM</a>
-            <a href="/fb">FACEBOOK</a>
-            <a href="/twitter">TWITTER</a>
-            <a href="/fakenews">FAKE NEWS</a>
-            
-            
-        </div>
-        {% block body %}{% endblock %}
-    </body>
+<head>
+ <title>Company Website</title>
+ <link rel="stylesheet" type="text/css" href="static/style.css">
+ <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+ <header>
+  <img src="images/" alt="Company Logo">
+  <nav>
+   <ul>
+    <li><a href="#">Instagram</a></li>
+    <li><a href="#">Facebook</a></li>
+    <li><a href="#">Twitter</a></li>
+    <li><a href="#">Fake News</a></li>
+   </ul>
+  </nav>
+ </header>
+
+ <main>
+  <div class="container">
+   <button onclick="goToPage('https://twitter.com')">Twitter</button>
+   <button onclick="goToPage('https://www.facebook.com')">Facebook</button>
+   <button onclick="goToPage('https://www.instagram.com')">Instagram</button>
+   <button onclick="goToPage('https://www.snopes.com')">Fake News</button>
+  </div>
+ </main>
+</body>
 </html>
