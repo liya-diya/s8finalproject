@@ -46,6 +46,7 @@ header {
    }
    
    button {
+    width : 300px;
     padding: 20px 40px;
     font-size: 24px;
     margin: 10px;
@@ -61,3 +62,20 @@ header {
    button:hover {
     background-color: #0056b3;
    }
+   #company{
+    height :100px;
+   }
+   #typing-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center; /* updated */
+    animation: typing 2s steps(20) forwards;
+}
+
+@keyframes typing {
+    from { width: 0; margin: 0 auto; } /* updated */
+    to { width: 100%; margin: 0 auto; } /* updated */
+}
