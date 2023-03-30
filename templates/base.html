@@ -4,27 +4,25 @@
  <title>Company Website</title>
  <link rel="stylesheet" type="text/css" href="static/style.css">
  <script type="text/javascript" src="script.js"></script>
+ {% block head %}{% endblock %}
 </head>
 <body>
  <header>
   <img src="static/images/companylogo.png" alt="Company Logo" id = "company">
   <nav>
    <ul>
-    <li><a href="#">Instagram</a></li>
-    <li><a href="#">Facebook</a></li>
-    <li><a href="#">Twitter</a></li>
-    <li><a href="#">Fake News</a></li>
+    <li><a href="\">Home</a></li>
+    <li><a href="\instagram">Instagram</a></li>
+    <li><a href="\facebook">Facebook</a></li>
+    <li><a href="\twitter">Twitter</a></li>
+    <li><a href="\fakenews">Fake News</a></li>
+    <li><a href="\about">About</a></li>
    </ul>
   </nav>
  </header>
 <main>
- <div id="typing-text">Select the category in which you want to detect Fake or Not.</div>
-  <div class="container">
-   <button onclick="goToPage('https://twitter.com')">Twitter</button>
-   <button onclick="goToPage('https://www.facebook.com')">Facebook</button>
-   <button onclick="goToPage('https://www.instagram.com')">Instagram</button>
-   <button onclick="goToPage('https://www.snopes.com')">Fake News</button>
-  </div>
+    {% block body %}{% endblock %}
+ 
  </main>
 </body>
 </html>
