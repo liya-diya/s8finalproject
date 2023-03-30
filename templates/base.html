@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href={{url_for('static', filename='style.css')}}>
+        {% block head %}{% endblock %}
+    </head>
+    <body class="darkmode">
+        <script src={{url_for('static', filename='script.js')}}></script>
+        <div class="topnav">
+            <a href="/insta">INSTAGRAM</a>
+            <a href="/fb">FACEBOOK</a>
+            <a href="/twitter">TWITTER</a>
+            <a href="/fakenews">FAKE NEWS</a>
+            
+            
+        </div>
+        {% block body %}{% endblock %}
+    </body>
+</html>
